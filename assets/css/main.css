@@ -2773,6 +2773,58 @@ section,
   background-color: #0a0a3a;
 }
 
+/* Focus Guild slider (Portfolio page) */
+.focus-guild-slider {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 55%);
+  background-color: #05051a;
+}
+
+.focus-guild-slider .swiper-slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.focus-guild-slider .swiper-slide img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 480px;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 10px 10px 35px;
+}
+
+@media (max-width: 768px) {
+  .focus-guild-slider .swiper-slide img {
+    height: 300px;
+  }
+}
+
+.focus-guild-slider .swiper-button-prev,
+.focus-guild-slider .swiper-button-next {
+  color: #c5cae9;
+}
+
+.focus-guild-slider .swiper-button-prev:hover,
+.focus-guild-slider .swiper-button-next:hover {
+  color: #ffffff;
+}
+
+.focus-guild-slider .swiper-pagination .swiper-pagination-bullet {
+  background-color: #c5cae9;
+  opacity: 0.5;
+}
+
+.focus-guild-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  opacity: 1;
+}
+
 /* Resume / experience timeline */
 .resume .resume-title {
   font-size: 26px;
